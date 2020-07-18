@@ -7,8 +7,8 @@ android {
     buildToolsVersion "29.0.3"
 
     defaultConfig {
-        buildConfigField("String", "URL_BACK_END", "\"http://todo-api-laravel.herokuapp.com/\"")
-        applicationId "com.algokelvin.workshop.app.client"
+        buildConfigField("String", "URL", "\"http://todo-api-laravel.herokuapp.com/\"")
+        applicationId "com.algokelvin.workshop.appclient"
         minSdkVersion 16
         targetSdkVersion 29
         versionCode 1
@@ -30,7 +30,6 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     implementation 'androidx.core:core-ktx:1.3.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
 
     //Library Retrofit, Gson, OkHttp

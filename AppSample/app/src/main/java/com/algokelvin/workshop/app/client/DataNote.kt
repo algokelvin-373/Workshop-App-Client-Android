@@ -1,7 +1,17 @@
 package com.algokelvin.workshop.app.client
 
-data class DataNote(val note: ArrayList<Note>)
-data class Note(val id: Int, val title: String, val description: String, val done: String)
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+data class DataNote(val note: ArrayList<Note>?)
+
+@Parcelize
+data class Note(
+    val id: Int? = null,
+    val title: String? = null,
+    val description: String? = null,
+    val done: String? = null
+): Parcelable
 
 fun dummyNote(): ArrayList<Note> {
     val data = ArrayList<Note>()

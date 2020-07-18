@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Workshop-AppClient</string>
+    <string name="note">Note</string>
+    <string name="title">title</string>
+    <string name="description">description</string>
+
+</resources>

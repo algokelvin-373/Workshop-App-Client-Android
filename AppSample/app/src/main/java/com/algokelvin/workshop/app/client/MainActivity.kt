@@ -10,9 +10,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rvItemNote.apply {
-            layoutManager = LinearLayoutManager(this@MainActivity)
-            adapter = AdapterNote(dummyNote(), this@MainActivity)
-        }
+        getDataNoteResponse()
+//        rvItemNote.apply {
+//            layoutManager = LinearLayoutManager(this@MainActivity)
+//            adapter = AdapterNote(getDataNoteResponse(), this@MainActivity)
+//        }
     }
 }
